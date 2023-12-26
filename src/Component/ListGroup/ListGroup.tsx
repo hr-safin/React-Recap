@@ -3,8 +3,10 @@ const ListGroup = () => {
   return (
     <div>
       <ul className=" list-none">
-        {list.map((item) => (
-          <li className=" text-lg p-3 border-2">{item}</li>
+        {list.map((item, index) => (
+          <li onClick={() => console.log("clicked", item, index)} key={index} className=" text-lg p-3 border-2">
+            {item}
+          </li>
         ))}
       </ul>
     </div>
