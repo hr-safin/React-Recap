@@ -1,4 +1,5 @@
-import Message from "./Component/Message"
+import ListGroup from "./Component/ListGroup/ListGroup"
+
 
 // PascalCasing
 function App() {
@@ -6,7 +7,7 @@ function App() {
 
   return (
     <>
-      <Message />
+      <ListGroup />
     </>
   )
 }
