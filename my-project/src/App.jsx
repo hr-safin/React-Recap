@@ -1,3 +1,4 @@
+import Form from "./TwoWayBinding/form"
 
 
 function App() {
@@ -5,7 +6,7 @@ function App() {
 
   return (
     <>
-      
+      <Form />
     </>
   )
 }
