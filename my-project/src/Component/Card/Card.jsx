@@ -3,7 +3,7 @@ import React from "react";
 const Card = () => {
   return (
     //parent
-    <div className="flex flex-col sm:flex-row gap-10 items-center justify-center p-10">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center justify-center p-10">
       <div className="card w-96 bg-base-100 shadow-xl">
         <figure>
           <img
