@@ -14,7 +14,7 @@ const GetData = () => {
             <button onClick={getUser} className='bg-blue-500 rounded-md px-4 py-2 text-white'>Get Data</button>
             
             <div className=' bg-gray-50 p-5 mt-6'>
-                 {user.map((item,idx) =><h2 className=' text-lg pt-5' key={idx}>{item.name}</h2>)}
+                 {user.map((item,index) =><h2 className=' text-lg pt-5' key={idx}>{item.name}</h2>)}
             </div>
         </div>
     );
