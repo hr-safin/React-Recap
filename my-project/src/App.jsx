@@ -1,3 +1,4 @@
+import Card from "./Component/Card/Card";
 import GetData from "./Component/GetData/GetData";
 import Form from "./TwoWayBinding/form"
 import {
@@ -18,7 +19,7 @@ function App() {
   return (
     <>
       {/* <Form /> */}
-      <GetData />
+      <Card />
     </>
   )
 }
