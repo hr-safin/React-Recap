@@ -3,7 +3,7 @@ import Card from "../Card/Card";
 
 const Users = () => {
   const [user, setUser] = useState([]);
-  const {name , age , university} = useContext(useContext)
+  
 
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")

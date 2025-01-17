@@ -8,24 +8,22 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-const userContext = createContext()
+
 function App() {
 
-  
-  const info = {
-    name : "hasibur Rahman Safin",
-    age : 22,
-    university :  "Brac University"
-  }
+  // const router = new createBrowserRouter([
+  //   {
+  //     path : "/",
 
-
+  //   }
+  // ])
   
 
   return (
-    <userContext.Provider value={info}>
+    <>
       {/* <Form /> */}
       <Users name="Hasibur Rahman Safin" />
-    </userContext.Provider>
+    </>
   )
 }
 
