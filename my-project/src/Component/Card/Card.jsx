@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 
 const Card = ({data}) => {
+
+ 
   return (
     <div class="w-full max-w-md px-8 py-4 mt-16 bg-white rounded-lg shadow-lg ">
       <div class="flex justify-center -mt-16 md:justify-end">
@@ -12,7 +14,7 @@ const Card = ({data}) => {
       </div>
 
       <h2 class="mt-2 text-xl font-semibold text-gray-800 ">
-       Name :  {data.name}
+       Name :  {data.name}  : name
       </h2>
 
       <p class="mt-2 text-sm text-gray-600 ">
@@ -28,7 +30,7 @@ const Card = ({data}) => {
           tabindex="0"
           role="link"
         >
-          User Name : {data.username}
+          User Name : {data.username} : age
         </a>
       </div>
     </div>
