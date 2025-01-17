@@ -5,7 +5,7 @@ const Card = () => {
     //parent
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10 items-center justify-center p-10">
       {/* firs card */}
-      <div className="col-span-2 bg-red-600">
+      <div className="col-span-2 ">
         <div className="card   w-96 bg-base-100 shadow-xl">
           <figure>
             <img

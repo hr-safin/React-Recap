@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       {/* <Form /> */}
-      <Card />
+      <GetData name="Hasibur Rahman Safin" />
     </>
   )
 }
