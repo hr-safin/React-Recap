@@ -1,5 +1,6 @@
 import Card from "./Component/Card/Card";
 import GetData from "./Component/GetData/GetData";
+import Users from "./Component/GetData/Users";
 import Form from "./TwoWayBinding/form"
 import {
   createBrowserRouter,
@@ -19,7 +20,7 @@ function App() {
   return (
     <>
       {/* <Form /> */}
-      <GetData name="Hasibur Rahman Safin" />
+      <Users name="Hasibur Rahman Safin" />
     </>
   )
 }

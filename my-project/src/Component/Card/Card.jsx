@@ -1,57 +1,35 @@
 import React from "react";
 
-const Card = () => {
+const Card = ({data}) => {
   return (
-    //parent
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10 items-center justify-center p-10">
-      {/* firs card */}
-      <div className="col-span-2 ">
-        <div className="card   w-96 bg-base-100 shadow-xl">
-          <figure>
-            <img
-              src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-              alt="Shoes"
-            />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-end">
-              <button className="btn btn-primary">Buy Now</button>
-            </div>
-          </div>
-        </div>
+    <div class="w-full max-w-md px-8 py-4 mt-16 bg-white rounded-lg shadow-lg ">
+      <div class="flex justify-center -mt-16 md:justify-end">
+        <img
+          class="object-cover w-20 h-20 border-2 border-blue-500 rounded-full "
+          alt="Testimonial avatar"
+          src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=76&q=80"
+        />
       </div>
 
-      <div className="card w-96 bg-base-100 shadow-xl">
-        <figure>
-          <img
-            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-            alt="Shoes"
-          />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
-          </div>
-        </div>
-      </div>
-      <div className="card w-96 bg-base-100 shadow-xl">
-        <figure>
-          <img
-            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-            alt="Shoes"
-          />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
-          </div>
-        </div>
+      <h2 class="mt-2 text-xl font-semibold text-gray-800 ">
+       Name :  {data.name}
+      </h2>
+
+      <p class="mt-2 text-sm text-gray-600 ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores
+        deserunt ea doloremque natus error, rerum quas odio quaerat nam ex
+        commodi hic, suscipit in a veritatis pariatur minus consequuntur!
+      </p>
+
+      <div class="flex justify-end mt-4">
+        <a
+          href="#"
+          class="text-lg font-medium text-blue-600 dark:text-blue-300"
+          tabindex="0"
+          role="link"
+        >
+          User Name : {data.username}
+        </a>
       </div>
     </div>
   );
